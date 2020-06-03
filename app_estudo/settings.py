@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'course',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'db_estudo',
         'USER': 'root',
-        'PASSWORD': 'admi'
+        'PASSWORD': 'admi',
+        'HOST': 'localhost',
     }
 }
 
@@ -127,3 +129,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'app_estudo/static')
 ]
 
+# Media
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
