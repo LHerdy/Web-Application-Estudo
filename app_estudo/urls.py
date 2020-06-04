@@ -20,6 +20,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', include('core.urls')),
-    path('contato/', include('core.urls')),
+    path('cursos/', include('course.urls')),
     path('admin/', admin.site.urls),
 ]
